@@ -75,7 +75,7 @@ export default function Hero() {
   const [isLoading, setLoading] = useState(false);
 
   return (
-    <Container maxW={'1600px'}>
+    <Container maxW={'7xl'}>
       <ModalML isOpen={isOpen} onClose={onClose} data={data} isLoading={isLoading} />
       <Flex
         minH={'50vh'}
@@ -98,6 +98,7 @@ export default function Hero() {
           <Text
             fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
             fontWeight={'black'}
+            lineHeight={1.1}
           >
             Come Join Us On Our Journey.
             E-Commerce With Powerful Machine Learning.

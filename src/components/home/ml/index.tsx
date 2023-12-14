@@ -2,7 +2,7 @@ import { Avatar, Container, Flex, Stack, Text, useColorModeValue } from "@chakra
 
 export default function SectionML() {
   return (
-    <Container maxW={'1600px'} py={10}>
+    <Container maxW={'7xl'} py={10}>
       <Stack maxW={'4xl'} textAlign={'center'} mx={'auto'}>
         <Text
           fontSize={{ base: '3xl', md: '4xl' }}

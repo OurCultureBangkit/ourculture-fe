@@ -1,4 +1,4 @@
-import { Box, Button, Container, Fade, Flex, Icon, Stack, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Icon, Stack, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { LogoPrimary } from "../logo";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { useEffect, useState } from "react";
@@ -8,6 +8,7 @@ const ToggleColorMode = () => {
   return (
     <Button
       size={'sm'}
+      fontSize={'md'}
       onClick={toggleColorMode}
     >
       {colorMode === 'light' ? <Icon as={BsMoon} /> : <Icon as={BsSun} />}
