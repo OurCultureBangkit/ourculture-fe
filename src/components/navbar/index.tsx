@@ -1,7 +1,7 @@
 import { Box, Button, Container, Fade, Flex, Icon, Stack, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { LogoPrimary } from "../logo";
 import { BsSun, BsMoon } from "react-icons/bs";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ToggleColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,7 +32,7 @@ const ButtonDownloadApp = () => {
 export default function Navbar() {
   const [showDownloadApp, setShowDownloadApp] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setShowDownloadApp(window.scrollY > 300);
     }
@@ -48,6 +48,7 @@ export default function Navbar() {
       pos={'sticky'}
       top={0}
       py={3}
+      px={{ base: 3, md: 0 }}
       zIndex={999}
     >
       <Container maxW={'1600px'} >
