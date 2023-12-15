@@ -8,6 +8,7 @@ import Head from "next/head";
 import SectionStack from "@/components/home/stack";
 import SectionTeams from "@/components/home/teams";
 import TabContent from "@/components/home/teams/TabContent";
+import SectionAsked from "@/components/home/asked";
 
 export default function HomePage() {
   const { colorMode } = useColorMode();
@@ -44,13 +45,13 @@ export default function HomePage() {
           </Box>
         </Box>
 
-        <Box pt={{ sm: '20vh', md: '50vh' }} bg={useColorModeValue('gray.50', 'gray.800')}>
+        <Box pt={{ base: '10dvh', sm: '20dvh', md: '50dvh' }} bg={useColorModeValue('gray.50', 'gray.800')}>
           <SectionML />
           <SectionStack />
         </Box>
 
-        <Flex flexWrap={'wrap'} justify={'center'} w={'full'} pos={'relative'} overflow={'hidden'} minH={'70dvh'}>
-          <Box w={'full'} pos={'relative'} zIndex={1}>
+        <Flex flexWrap={'wrap'} justify={'center'} w={'full'} pos={'relative'} overflow={'hidden'} minH={'70dvh'} py={{ base: 10, md: 24 }}>
+          <Box w={'full'} zIndex={1}>
             <SectionAbout />
           </Box>
           <Image pos={{ lg: 'absolute' }} zIndex={0}

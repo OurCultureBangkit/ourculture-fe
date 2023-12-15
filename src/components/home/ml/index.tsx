@@ -5,7 +5,7 @@ export default function SectionML() {
     <Container maxW={'7xl'} py={10}>
       <Stack maxW={'4xl'} textAlign={'center'} mx={'auto'}>
         <Text
-          fontSize={{ base: '3xl', md: '4xl' }}
+          fontSize={{ base: '2xl', md: '4xl' }}
           fontWeight={'black'}
         >
           &quot;Machine Learning&quot; is the Power Here.
@@ -14,7 +14,7 @@ export default function SectionML() {
           maxW={{ base: 'full', md: '2xl' }}
           mx={'auto'}
           color={useColorModeValue('gray.500', 'gray.400')}
-          lineHeight={'1.8'}
+          lineHeight={{ md: '1.8' }}
         >
           I have experienced in Machine Learning for 3 years. And all my journey that
           make me to be a Machine Learning Engineer is here. This e-commerce powered by
@@ -29,7 +29,7 @@ export default function SectionML() {
               fontSize={'md'}
               fontWeight={'bold'}
             >
-              Teguh Permana
+              Teguh Pramana
             </Text>
             <Text
               fontSize={'sm'}

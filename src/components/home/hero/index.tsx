@@ -44,6 +44,7 @@ const ButtonHeader = ({ setData, setLoading, onOpen }: any) => {
         colorScheme="yellow"
         cursor={'pointer'}
         w={'fit-content'}
+        rounded={{ base: 'lg', md: 'xl' }}
         px={{ base: 10, md: 7 }}
         py={{ base: 3, md: 6 }}
       >
@@ -58,12 +59,13 @@ const ButtonHeader = ({ setData, setLoading, onOpen }: any) => {
         colorScheme="yellow"
         cursor={'pointer'}
         w={'fit-content'}
+        rounded={{ base: 'lg', md: 'xl' }}
         px={10}
         py={{ base: 3, md: 6 }}
         display={{ base: 'none', md: 'flex' }}
         onClick={() => ref.current?.click()}
       >
-        Upload Image
+        Predicted Image
       </Button>
     </Flex>
   )
@@ -92,13 +94,13 @@ export default function Hero() {
           spacing={3}
           align={{ md: 'center' }}
         >
-          <Text color={'#FFC120'} fontWeight={'medium'} fontSize={{ md: 'lg' }}>
+          <Text color={'#FFC120'} fontWeight={'medium'} fontSize={{ base: 'sm', md: 'lg' }}>
             Capstone Project - Bangkit Academy 2023
           </Text>
           <Text
             fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
             fontWeight={'black'}
-            lineHeight={1.1}
+            lineHeight={1.3}
           >
             Come Join Us On Our Journey.
             E-Commerce With Powerful Machine Learning.

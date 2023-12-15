@@ -1,4 +1,4 @@
-import { Icon, Stack, Tab, TabList, Tabs, Text, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Icon, Stack, Tab, TabList, Tabs, Text, useColorModeValue } from "@chakra-ui/react";
 import { SiTensorflow, SiAndroid, SiGooglecloud } from "react-icons/si";
 
 interface teamNamesProps {
@@ -28,20 +28,23 @@ export default function TabTeams() {
   const headerColor = useColorModeValue('gray.400', 'gray.500');
 
   return (
-    <TabList gap={16}>
-      {teamNames.map((team, index) => (
-        <Tab key={index}
-          p={0}
-          color={headerColor}
-          _selected={{
-            color: '#ffc120',
-            _hover: { color: '#ffc120' }
-          }}
-          _hover={{ color: hoverColor }}
-        >
-          <TabHeader team={team} />
-        </Tab>
-      ))}
+    <TabList>
+      <Flex justify={'center'} align={'center'} gap={{ base: 10, md: 14, lg: 16 }}>
+        {teamNames.map((team, index) => (
+          <Tab key={index}
+            p={0}
+            bg={'transparent'} boxShadow={'none'}
+            color={headerColor}
+            _selected={{
+              color: '#ffc120',
+              _hover: { color: '#ffc120' }
+            }}
+            _hover={{ color: hoverColor }}
+          >
+            <TabHeader team={team} />
+          </Tab>
+        ))}
+      </Flex>
     </TabList>
   )
 }

@@ -3,7 +3,7 @@ import { MdOutlineManageSearch } from "react-icons/md";
 
 export default function SectionAbout() {
   return (
-    <Container maxW={'7xl'} py={24}>
+    <Container maxW={'7xl'} pb={24} >
       <Stack maxW={'3xl'} px={{ base: 3, md: 0 }}>
         <Icon as={MdOutlineManageSearch} boxSize={14} color={useColorModeValue('gray.400', 'gray.300')} />
         <Text color={'#ffc120'}>

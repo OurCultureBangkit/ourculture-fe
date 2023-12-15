@@ -113,7 +113,7 @@ const AndroidPanel = () => {
 
 export default function TabContent() {
   return (
-    <Container maxW={'7xl'} py={20} px={{ base: 3, md: 0 }}>
+    <Container maxW={'7xl'} py={{ base: 12, md: 20 }} px={{ base: 3, md: 0 }}>
       <TabPanels>
         <PanelWrapper title="Cloud Computing Engineer">
           <CloudComputingPanel />

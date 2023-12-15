@@ -26,7 +26,7 @@ export default function SectionTeams() {
           There are Cloud Computing, Machine Learning, and Android Development teams.
           Check this card to see the teams behind Ourculture.
         </Text>
-        <Box pt={12}>
+        <Box pt={{ base: 7, md: 12 }}>
           <TabTeams />
         </Box>
       </Stack>
