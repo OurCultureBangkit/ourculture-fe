@@ -44,8 +44,8 @@ export default function Navbar() {
   return (
     <Box w={'full'}
       bg={useColorModeValue('white', 'gray.800')}
-      border={'1px'}
-      borderColor={useColorModeValue('gray.200', 'gray.800')}
+      borderBottom={'1px'}
+      borderColor={useColorModeValue('gray.200', 'gray.700')}
       pos={'sticky'}
       top={0}
       py={3}

@@ -3,9 +3,11 @@ import HeroImage from "@/components/home/hero/heroImage";
 import SectionAbout from "@/components/home/about";
 import SectionML from "@/components/home/ml";
 import MainLayout from "@/layout/MainLayout";
-import { Box, Flex, Image, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Image, Tabs, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import Head from "next/head";
 import SectionStack from "@/components/home/stack";
+import SectionTeams from "@/components/home/teams";
+import TabContent from "@/components/home/teams/TabContent";
 
 export default function HomePage() {
   const { colorMode } = useColorMode();
@@ -47,7 +49,7 @@ export default function HomePage() {
           <SectionStack />
         </Box>
 
-        <Flex flexWrap={'wrap'} justify={'center'} w={'full'} pos={'relative'} overflow={'hidden'} minH={'50dvh'}>
+        <Flex flexWrap={'wrap'} justify={'center'} w={'full'} pos={'relative'} overflow={'hidden'} minH={'70dvh'}>
           <Box w={'full'} pos={'relative'} zIndex={1}>
             <SectionAbout />
           </Box>
@@ -62,6 +64,12 @@ export default function HomePage() {
           />
         </Flex>
 
+        <Tabs variant={'unstyled'} isLazy>
+          <Box bg={useColorModeValue('gray.50', 'gray.800')}>
+            <SectionTeams />
+          </Box>
+          <TabContent />
+        </Tabs>
       </MainLayout>
     </>
   )

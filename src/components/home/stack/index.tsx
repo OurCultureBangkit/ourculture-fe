@@ -71,7 +71,8 @@ export default function SectionStack() {
   const bgImgStack = useColorModeValue('white', 'gray.200');
   const bgStack = useColorModeValue('white', 'gray.700');
   const borderStackColor = useColorModeValue('gray.200', 'gray.700');
-  const textSecondaryColor = useColorModeValue('gray.500', 'gray.400');
+  const textSecondaryColor = useColorModeValue('gray.500', 'gray.300');
+  const titleSecondary = useColorModeValue('gray.500', 'gray.400');
 
   return (
     <Container maxW={'7xl'} py={14}>
@@ -105,7 +106,7 @@ export default function SectionStack() {
                   {stack.name}
                 </Text>
                 <Text fontSize={'xs'}
-                  color={textSecondaryColor}
+                  color={titleSecondary}
                 >
                   {stack.category}
                 </Text>
@@ -114,6 +115,7 @@ export default function SectionStack() {
             <Text
               fontSize={'sm'}
               color={textSecondaryColor}
+              lineHeight={1.7}
             >
               {stack.description}
             </Text>
