@@ -25,7 +25,7 @@ const PanelWrapper = ({ title, children }: { title: string, children: React.Reac
 
 const CloudComputingPanel = () => {
   const datas = [
-    { id: 1, name: "Gung Krisna", bangkitId: "C014BSY3756", image: "null" },
+    { id: 1, name: "Gung Krisna", bangkitId: "C014BSY3756", image: "krisna.jpg" },
     { id: 2, name: "Misransyah", bangkitId: "C463BSY4349", image: "null" }
   ];
 
@@ -54,9 +54,9 @@ const CloudComputingPanel = () => {
 
 const MLPanel = () => {
   const datas = [
-    { id: 1, name: "Teguh Pramana", bangkitId: "M014BSY0894", image: "null" },
+    { id: 1, name: "Teguh Pramana", bangkitId: "M014BSY0894", image: "teguh.jpg" },
     { id: 2, name: "Zulfan Syahidan", bangkitId: "M313BSY1544", image: "null" },
-    { id: 3, name: "Tegar Arif", bangkitId: "M008BSY0961", image: "null" }
+    { id: 3, name: "Tegar Arif", bangkitId: "M008BSY0961", image: "tegar.jpg" }
   ];
 
   const bgCard = useColorModeValue('white', 'gray.800');
@@ -84,8 +84,8 @@ const MLPanel = () => {
 
 const AndroidPanel = () => {
   const datas = [
-    { id: 1, name: "Reyvi Rahman", bangkitId: "A226BSY2640", image: "null" },
-    { id: 2, name: "Agung Prema", bangkitId: "A113BSY2353", image: "null" }
+    { id: 1, name: "Reyvi Rahman", bangkitId: "A226BSY2640", image: "reyvi.jpg" },
+    { id: 2, name: "Agung Prema", bangkitId: "A113BSY2353", image: "bagus.jpg" }
   ];
 
   const bgCard = useColorModeValue('white', 'gray.800');

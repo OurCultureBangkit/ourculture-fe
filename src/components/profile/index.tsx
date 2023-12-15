@@ -9,7 +9,8 @@ interface ProfileCardProps {
 export default function ProfileCard({ name, bangkitId, image }: ProfileCardProps) {
   return (
     <Stack align={'center'}>
-      <Avatar src={image} name={name} size={'xl'} bg={"#ffc120"} color={'black'} />
+
+      <Avatar src={image} name={name} size={'2xl'} bg={"#ffc120"} color={'black'} />
       <Stack align={'center'} spacing={0} pt={5} pb={2}>
         <Text
           fontSize={'2xl'}

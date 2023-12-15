@@ -8,10 +8,10 @@ import Head from "next/head";
 import SectionStack from "@/components/home/stack";
 import SectionTeams from "@/components/home/teams";
 import TabContent from "@/components/home/teams/TabContent";
-import SectionAsked from "@/components/home/asked";
 
 export default function HomePage() {
   const { colorMode } = useColorMode();
+
   return (
     <>
       <Head>
@@ -45,7 +45,7 @@ export default function HomePage() {
           </Box>
         </Box>
 
-        <Box pt={{ base: '10dvh', sm: '20dvh', md: '50dvh' }} bg={useColorModeValue('gray.50', 'gray.800')}>
+        <Box pt={{ base: '10rem', sm: '20dvh', md: '50dvh' }} bg={useColorModeValue('gray.50', 'gray.800')}>
           <SectionML />
           <SectionStack />
         </Box>
@@ -65,7 +65,7 @@ export default function HomePage() {
           />
         </Flex>
 
-        <Tabs variant={'unstyled'} isLazy>
+        <Tabs variant={'unstyled'}>
           <Box bg={useColorModeValue('gray.50', 'gray.800')}>
             <SectionTeams />
           </Box>
