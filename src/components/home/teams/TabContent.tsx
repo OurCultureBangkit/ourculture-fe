@@ -26,7 +26,7 @@ const PanelWrapper = ({ title, children }: { title: string, children: React.Reac
 const CloudComputingPanel = () => {
   const datas = [
     { id: 1, name: "Gung Krisna", bangkitId: "C014BSY3756", image: "krisna.jpg" },
-    { id: 2, name: "Misransyah", bangkitId: "C463BSY4349", image: "null" }
+    { id: 2, name: "Misransyah", bangkitId: "C463BSY4349", image: "misransyah.webp" }
   ];
 
   const bgCard = useColorModeValue('white', 'gray.800');
@@ -55,7 +55,7 @@ const CloudComputingPanel = () => {
 const MLPanel = () => {
   const datas = [
     { id: 1, name: "Teguh Pramana", bangkitId: "M014BSY0894", image: "teguh.jpg" },
-    { id: 2, name: "Zulfan Syahidan", bangkitId: "M313BSY1544", image: "null" },
+    { id: 2, name: "Zulfan Syahidan", bangkitId: "M313BSY1544", image: "zulfan.webp" },
     { id: 3, name: "Tegar Arif", bangkitId: "M008BSY0961", image: "tegar.jpg" }
   ];
 

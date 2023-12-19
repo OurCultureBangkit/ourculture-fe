@@ -44,7 +44,9 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         bottom={3}
         right={3}
       >
-        <Button
+        <Button as="a"
+          href="https://drive.google.com/file/d/1cCxbGFdiKl4KDPeaePmiaQ9vThgjhAy_/view"
+          target="_blank"
           size="sm"
           fontSize={'xs'}
           colorScheme="yellow"

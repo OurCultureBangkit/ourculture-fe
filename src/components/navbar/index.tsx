@@ -18,7 +18,9 @@ const ToggleColorMode = () => {
 
 const ButtonDownloadApp = () => {
   return (
-    <Button
+    <Button as="a"
+      href="https://drive.google.com/file/d/1cCxbGFdiKl4KDPeaePmiaQ9vThgjhAy_/view"
+      target="_blank"
       size={'sm'}
       fontSize={'sm'}
       colorScheme="yellow"

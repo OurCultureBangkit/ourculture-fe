@@ -79,7 +79,7 @@ export default function SectionStack() {
       <Flex px={{ base: 3, md: 0 }} flexWrap={'wrap'} gap={5} justify={'center'}>
         {stacks.map((stack, index) => (
           <Stack key={index}
-            w={{ base: 'full', sm: '280px', md: '300px', lg: '310px' }}
+            w={{ base: 'full', md: '300px', lg: '310px' }}
             spacing={4}
             bg={bgStack}
             rounded={'lg'}

@@ -38,7 +38,9 @@ const ButtonHeader = ({ setData, setLoading, onOpen }: any) => {
 
   return (
     <Flex gap={{ base: 0, md: 5 }} align={'center'}>
-      <Button
+      <Button as="a"
+        href="https://drive.google.com/file/d/1cCxbGFdiKl4KDPeaePmiaQ9vThgjhAy_/view"
+        target="_blank"
         size={'md'}
         fontSize={'sm'}
         colorScheme="yellow"
