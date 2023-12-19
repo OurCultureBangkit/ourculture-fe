@@ -12,7 +12,7 @@ export default function ModalML({ isOpen, onClose, data, isLoading }: modalMlPro
   const bgModal = useColorModeValue('white', 'gray.900');
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} size={'full'}>
+    <Modal isOpen={isOpen} onClose={onClose} size={'full'} closeOnEsc={false}>
       <ModalOverlay>
         <ModalContent as={Flex}
           justify={'center'}
